@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Import Vega & Vega-Lite (does not have to be from CDN) -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+  
+  <!-- CSS file -->
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+  
+  <h1>How Malaysia has handled Covid-19</h1>
+
+</head>
+<body>
+<p>This is how Malaysia compares to the rest of the world</p>
+  
+<div id="malaysian_map"></div>
+<div id="world_map"></div>
+<div id="bar_chart">
+
+<script type="text/javascript">
+
+  var map_malaysia = "js/malaysian_map.vg.json";
+  vegaEmbed('#malaysian_map', map_malaysia).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
+
+
+<script type="text/javascript">
+  
+  var map_world = "js/covid_world.vg.json";
+  vegaEmbed('#world_map', map_world).then(function(result) {
+  }).catch(console.error);
+</script>
+
+<script type="text/javascript">
+  var bar = "js/covid_bar_malaysia.vg.json";
+  vegaEmbed('#bar_chart', bar).then(function(result){
+  }).catch(console.error);
+
+</script>
+
+</body>
+</html>

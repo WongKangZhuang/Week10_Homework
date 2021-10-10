@@ -1,0 +1,32 @@
+h1 {
+	font-size: 24px;
+	color: #990000;
+}
+
+p {
+	font-size: 18px;
+	color: #990000;
+}
+
+#bar_chart{
+	top:100px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+}
+
+#malaysian_map {
+	top:100px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+#world_map {
+	top:100px;
+	bottom: 100px; 
+	left: 100px;
+	right: 100px;
+}
